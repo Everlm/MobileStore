@@ -5,14 +5,15 @@ using MyStore.Models;
 
 namespace MyStore.EmployeesApp
 {
-    public partial class App : Application
-    {
-    public static EmployeeDTO CurrentEmployee;
-        public App()
-        {
-            InitializeComponent();
+	public partial class App : Application
+	{
+		public static EmployeeDTO CurrentEmployee;
 
-            MainPage = new NavigationPage(new Pages.LoginPage());
-        }
-    }
+		public App()
+		{
+			InitializeComponent();
+
+			MainPage = new NavigationPage(new Pages.LoginPage());
+		}
+	}
 }
